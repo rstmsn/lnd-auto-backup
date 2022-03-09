@@ -71,7 +71,7 @@ wait_for_creation() {
 
 generate_backup_label() {
   local stamp
-  stamp=$(date -d "today" +"%d%M%Y_%H-%M-%S")
+  stamp=$(date -d "today" +"%d-%a-%Y_%H-%M-%S")
   echo "${LND_CHAIN}_${LND_NETWORK}_${stamp}_channel.backup"
 }
 
